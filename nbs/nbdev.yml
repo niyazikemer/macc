@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "macc"
+  site-url: "https://niyazikemer.github.io/macc"
+  description: "mini accelerator"
+  repo-branch: main
+  repo-url: "https://github.com/niyazikemer/macc"
