@@ -5,4 +5,5 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://niyazikemer.github.io',
                 'git_url': 'https://github.com/niyazikemer/macc',
                 'lib_path': 'macc'},
-  'syms': {'macc.core': {'macc.core.foo': ('core.html#foo', 'macc/core.py')}}}
+  'syms': { 'macc.core': {'macc.core.foo': ('core.html#foo', 'macc/core.py')},
+            'macc.learn': {'macc.learn.foo': ('learner.html#foo', 'macc/learn.py')}}}
