@@ -19,20 +19,20 @@ def get_dls(train_ds, valid_ds, bs, **kwargs):
     return (DataLoader(train_ds, batch_size=bs, shuffle=True, **kwargs),
             DataLoader(valid_ds, batch_size=bs*2, **kwargs))
 
-# %% ../nbs/00_datasets.ipynb 24
+# %% ../nbs/00_datasets.ipynb 8
 def inplace(f):
     def _f(b):
         f(b)
         return b
     return _f
 
-# %% ../nbs/00_datasets.ipynb 27
+# %% ../nbs/00_datasets.ipynb 11
 def collate_dict(ds):
     get = itemgetter(*ds.features)
     def _f(b): return get(default_collate(b))
     return _f
 
-# %% ../nbs/00_datasets.ipynb 29
+# %% ../nbs/00_datasets.ipynb 13
 class DataLoaders:
     def __init__(self, *dls): self.train,self.valid = dls[:2]
 
